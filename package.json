@@ -1,0 +1,19 @@
+{
+  "name": "dungeon.io",
+  "version": "0.0.1",
+  "description": "Web-based dungeon crawler.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsemaj/dungeon.io.git"
+  },
+  "author": "Gent Semaj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gsemaj/dungeon.io/issues"
+  },
+  "homepage": "https://github.com/gsemaj/dungeon.io#readme"
+}
