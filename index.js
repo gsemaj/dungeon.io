@@ -1,6 +1,17 @@
-const io = require("socket.io")(80);
+console.log('Starting dungeon.io server...');
 
-console.log('Starting dungeon.io server...')
+const config = require('config');
+const app = require('express')();
+const http = require('http').createServer(app);
 
-console.log('Server stopped successfully.')
-process.exit(0);
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/client/index.html');
+});
+
+const port = config.has('web.port') ? config.get('web.port') : 80;
+http.listen(port, () => {
+    console.log('Server listening on *:' + port);
+});
+
+//console.log('Server stopped successfully.');
+//process.exit(0);
